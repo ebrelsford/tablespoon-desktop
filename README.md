@@ -1,5 +1,5 @@
 tablespoon-desktop
-------------------
+==================
 
 An [electron](https://github.com/atom/electron)-based desktop client for 
 [tablespoon](https://github.com/ajam/tablespoon).
@@ -9,7 +9,7 @@ binding, based largely on Max Ogden's [Monu](https://github.com/maxogden/monu/).
 
 
 Building
-========
+--------
 
 This is still a work in progress. Some node packages will need to be recompiled
 natively to work within electron. For example, using `node-sqlite3` on Linux 
@@ -24,7 +24,7 @@ Otherwise you should be able to do the following to get going:
 
 
 TODO
-====
+----
 
  * Build binaries for Mac, Windows, Linux
  * Drag and drop files including CSVs
