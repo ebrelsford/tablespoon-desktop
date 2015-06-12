@@ -1,0 +1,28 @@
+<form on-submit="submit-query">
+    <textarea value="{{query}}"></textarea>
+    <input type="submit" value="spoon me">
+</form>
+
+<div class="output">
+    {{#if results}}
+        <div>{{results.rows.length}} rows</div>
+        <table>
+            <tr>
+                {{#columns}}
+                    <th>{{this}}</th>
+                {{/columns}}
+            </tr>
+            {{#results.rows:row}}
+                <tr>
+                    {{#columns:columnIndex}}
+                        <td>{{results.rows[row][columns[columnIndex]]}}</td>
+                    {{/columns}}
+                </tr>
+            {{/results.rows}}
+        <table>
+    {{/if}}
+</div>
+
+<div class="error">
+    {{error}}
+</div>

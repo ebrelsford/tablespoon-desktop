@@ -1,0 +1,22 @@
+{
+  "name": "tablespoon-desktop",
+  "version": "0.0.1",
+  "description": "Desktop client for tablespoon",
+  "main": "index.js",
+  "scripts": {
+    "start": "unset GTK_IM_MODULE && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Brelsford <ebrelsford@gmail.com> (http://ebrelsford.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "0.26.1",
+    "node-gyp": "^2.0.1"
+  },
+  "dependencies": {
+    "nconf": "^0.7.1",
+    "page": "^1.6.3",
+    "ractive": "^0.7.3",
+    "underscore": "^1.8.3"
+  }
+}
