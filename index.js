@@ -21,7 +21,7 @@ app.on('ready', function() {
         }
     });
 
-    var url = 'file://' + __dirname + '/pages/index.html';
+    var url = 'file://' + __dirname + '/index.html';
     mainWindow.loadUrl(url);
     mainWindow.openDevTools();
 });

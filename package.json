@@ -11,7 +11,13 @@
   "license": "MIT",
   "devDependencies": {
     "electron-prebuilt": "0.26.1",
-    "node-gyp": "^2.0.1"
+    "gulp": "^3.9.0",
+    "gulp-atom": "^0.1.0",
+    "gulp-install": "^0.4.0",
+    "gulp-less": "^3.0.3",
+    "node-gyp": "^2.0.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.1"
   },
   "dependencies": {
     "nconf": "^0.7.1",
