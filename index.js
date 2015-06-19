@@ -4,6 +4,8 @@
 var app = require('app');
 var BrowserWindow = require('browser-window');
 
+require('electron-debug')();
+
 var mainWindow = null;
 
 // Quit when all windows are closed.
@@ -23,5 +25,4 @@ app.on('ready', function() {
 
     var url = 'file://' + __dirname + '/index.html';
     mainWindow.loadUrl(url);
-    mainWindow.openDevTools();
 });

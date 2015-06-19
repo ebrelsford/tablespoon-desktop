@@ -24,6 +24,7 @@
     "run-sequence": "^1.1.1"
   },
   "dependencies": {
+    "electron-debug": "^0.1.0",
     "nconf": "^0.7.1",
     "page": "^1.6.3",
     "ractive": "^0.7.3",
