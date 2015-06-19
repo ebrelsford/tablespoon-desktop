@@ -6,11 +6,44 @@
     </head>
     <body>
         <h1>Tablespoon</h1>
-        <a href="/load">load data</a>
-        <a href="/settings">settings</a>
         <div id="container"></div>
         <script>
             require('./configure');
+
+            var page = require('page');
+            var remote = require('remote');
+
+            var app = remote.require('app');
+            var Menu = remote.require('menu');
+            var menuTemplate = [
+                {
+                    label: 'File',
+                    submenu: [
+                        {
+                            label: 'Load',
+                            click: function () {
+                                page('/load');
+                            }
+                        },
+                        {
+                            label: 'Settings',
+                            click: function () {
+                                page('/settings');
+                            }
+                        },
+                        {
+                            accelerator: 'Ctrl + Q',
+                            label: 'Quit',
+                            click: function () {
+                                app.quit();
+                            }
+                        }
+                    ]
+                }
+            ];
+
+            menu = Menu.buildFromTemplate(menuTemplate);
+            Menu.setApplicationMenu(menu);
         </script>
     </body>
 </html>
