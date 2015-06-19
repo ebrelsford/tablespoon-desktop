@@ -18,6 +18,7 @@ app.on('ready', function() {
     mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
+        title: 'Tablespoon',
         "web-preferences": {
             "web-security": false
         }
